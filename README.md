@@ -29,7 +29,7 @@ So we want to use combination CNN models for tranning a AI model.
  like 
       
       RetinexNet model for SSR. 
-      UNet model for gamma correction.
+      Efficent-UNet model for gamma correction.
       and applying histogram equalization.
       
 As the values of sigma in SSR and gamma in Gamma Reduction varies for different images.
@@ -165,4 +165,107 @@ Each technique has parameters that may require tuning to achieve optimal results
 
 ### Computational Complexity: 
 The combined approach can increase computational requirements, so efficiency may be a consideration depending on the application.
+
+3 REtinexNet:
+RetinexNet is a deep learning model designed to address the challenges of image enhancement, particularly in terms of improving visibility and color consistency in images that suffer from poor lighting or high dynamic range. The model is inspired by the Retinex theory, which emphasizes the importance of illumination and reflectance in visual perception.
+
+## Key Features
+### Illumination Correction:
+
+RetinexNet aims to separate the illumination component from the reflectance component of an image. This separation helps in correcting lighting variations, leading to clearer and more visually appealing images.
+
+### Deep Learning Architecture:
+
+The network typically consists of multiple convolutional layers that learn to capture spatial and contextual features from the input images. The architecture is designed to learn the optimal way to enhance images based on training data.
+
+### Multi-Scale Processing:
+
+RetinexNet often incorporates multi-scale features, allowing it to process information at different resolutions. This capability helps in effectively enhancing details that might be missed at a single scale.
+
+### End-to-End Learning:
+
+The model is trained in an end-to-end manner, meaning that it learns to enhance images directly from the raw input to the desired output, without requiring manual tuning of parameters.
+
+## Applications:
+
+RetinexNet is particularly useful in applications such as:
+
+### Medical Imaging: 
+Enhancing the visibility of anatomical structures.
+### Remote Sensing: 
+Improving satellite images taken under varying lighting conditions.
+### Low-Light Image Enhancement: 
+Correcting images captured in poor lighting scenarios.
+
+## Advantages
+### Improved Visual Quality: 
+It significantly enhances the visibility of details in images, making them more useful for analysis.
+### Color Consistency: 
+By correcting illumination variations, it ensures that the colors in the images are more consistent and true to life.
+###Flexibility: 
+Applicable across various domains where image quality is critical.
+
+# Efficent-UNET:
+Efficient U-Net is a variant of the traditional U-Net architecture that combines the strengths of both U-Net and EfficientNet. It is designed for image segmentation tasks while optimizing for efficiency, making it particularly suitable for applications with limited computational resources.
+
+## Key Features
+### Backbone Architecture:
+
+Efficient U-Net uses EfficientNet as its backbone, which is known for its excellent performance and efficiency. EfficientNet employs a compound scaling method to balance network depth, width, and resolution, leading to improved accuracy with fewer parameters.
+
+### U-Net Structure:
+
+It retains the encoder-decoder structure of U-Net, which consists of downsampling (encoder) and upsampling (decoder) paths. This architecture allows the model to capture context and spatial information effectively.
+
+### Skip Connections:
+
+Like traditional U-Net, Efficient U-Net incorporates skip connections that link corresponding layers in the encoder and decoder. These connections help preserve spatial information, enhancing segmentation accuracy.
+
+### Multi-Scale Feature Extraction:
+
+The model leverages EfficientNet’s ability to capture multi-scale features, allowing it to perform well on images with varying resolutions and details.
+Lightweight Design:
+
+Efficient U-Net is optimized for speed and efficiency, making it suitable for real-time applications. Its design allows for fast inference without significantly compromising segmentation quality.
+
+## Advantages
+### Reduced Computational Load: 
+Efficient U-Net requires fewer resources compared to standard U-Net, making it suitable for deployment on devices with limited processing power.
+### High Accuracy: 
+By utilizing the efficient backbone, the model maintains high accuracy while being computationally efficient.
+### Scalability: 
+It can be easily scaled up or down based on the requirements of the task and available resources.
+
+# Combination of RetinexNet and Efficent-UNet:
+Combining RetinexNet and Efficient U-Net can create a powerful framework for image enhancement and segmentation, especially for challenging tasks like analyzing Permanently Shadowed Regions (PSR). 
+
+## Image Enhancement with RetinexNet:
+
+### Process:
+Input images are fed into RetinexNet, which performs illumination correction and detail enhancement.
+The output is a more visually consistent and clear image, suitable for segmentation.
+
+## Segmentation with Efficient U-Net:
+
+## Purpose: 
+Use Efficient U-Net to perform semantic segmentation on the enhanced images.
+
+## Process:
+The output from RetinexNet is then fed into the Efficient U-Net model.
+Efficient U-Net, leveraging its lightweight architecture and efficient feature extraction, accurately segments the regions of interest in the enhanced image.
+Benefits of the Combination
+Improved Input Quality:
+
+The enhanced images produced by RetinexNet allow Efficient U-Net to operate on higher-quality data, leading to better segmentation performance.
+Detail Preservation:
+
+RetinexNet enhances the visibility of fine details that might be critical for accurate segmentation, especially in PSR images where features may be obscured by shadow.
+
+## Efficiency:
+
+Efficient U-Net is designed for quick inference, making the combination suitable for real-time applications where rapid processing is essential.
+Robustness to Variability:
+
+The combination is effective in handling variability in lighting conditions typical of PSR images, ensuring that segmentation remains accurate even in challenging scenarios.
+Implementation Steps
 
