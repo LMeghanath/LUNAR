@@ -40,7 +40,7 @@ Lets see about the techniques and models used in this project:
 # SSR (Single Scale Retinex):
 Purpose: SSR aims to correct illumination and enhance color consistency in images, making them appear more natural and visually appealing.
 
-Mechanism:
+## Mechanism:
 
 It operates by decomposing an image into its illumination and reflectance components.
 
@@ -48,7 +48,7 @@ The process typically involves calculating the logarithm of the input image and 
 
 The final output is obtained by normalizing the reflectance component, often by scaling it to enhance contrast.
 
-Advantages:
+## Advantages:
 
 Improves Detail: SSR enhances the visibility of details in both bright and dark areas of an image.
 
@@ -56,7 +56,7 @@ Color Consistency: It reduces color artifacts that can arise from uneven lightin
 
 Applications: SSR is commonly used in fields like medical imaging, remote sensing, and photography where enhancing visibility and color accuracy is crucial.
 
-Limitations:
+## Limitations:
 
 Single Scale: As the name implies, SSR uses a single scale for the filtering process, which may not effectively handle images with varying illumination levels across different scales.
 
@@ -64,7 +64,7 @@ Single Scale: As the name implies, SSR uses a single scale for the filtering pro
 
 Gamma Reduction is a technique used in image processing to adjust the brightness of an image by altering its gamma value, which affects the luminance levels.
 
-Applications:
+## Applications:
 
 Low-Light Images: Useful for enhancing details in poorly lit images.
 
@@ -72,7 +72,7 @@ Contrast Improvement: Can help in improving the overall contrast and visibility 
 
 Pre-processing for Other Techniques: Often used as a preprocessing step before applying other image enhancement techniques or machine learning models.
 
-Considerations:
+## Considerations:
 
 Over-Enhancement Risk: Over-applying gamma reduction can lead to loss of detail in bright regions or introduce artifacts.
 
@@ -82,7 +82,7 @@ Subjective Quality: The effectiveness can be subjective, as it depends on the sp
 
 Histogram Equalization is an image enhancement technique used to improve the contrast of an image. Here’s a brief overview:
 
-Benefits:
+## Benefits:
 
 Improved Contrast: Enhances the visibility of features in both bright and dark regions of an image.
 
@@ -91,7 +91,7 @@ Dynamic Range Utilization: Makes full use of the available intensity range, impr
 Applications: Commonly used in various fields such as medical imaging, satellite imagery, and photography, particularly in situations where the original image has low contrast.
 
 
-Limitations:
+## Limitations:
 
 Noise Amplification: Histogram equalization can sometimes amplify noise in uniform areas of the image.
 
@@ -103,27 +103,27 @@ Color Images: Standard histogram equalization is typically applied to grayscale 
 
 Combining Single Scale Retinex (SSR), gamma correction, and histogram equalization can lead to significant improvements in image quality and perceived Signal-to-Noise Ratio (SNR). Here’s how these techniques work together:
 
-Combined Effects 
+# Combined Effects 
 
-Single Scale Retinex (SSR):
+## Single Scale Retinex (SSR):
 
 Illumination Normalization: SSR helps to separate illumination from reflectance, improving the visibility of details in the image by reducing the effects of uneven lighting.
 
 Enhanced Contrast: By enhancing the reflectance, SSR can make features more distinct against the background.
 
-Gamma Correction:
+## Gamma Correction:
 
 Brightness Adjustment: Applying gamma correction with a value less than 1 brightens darker areas, making details more visible.
 
 Contrast Improvement: This adjustment redistributes pixel values, which helps enhance the overall image contrast.
 
-Histogram Equalization:
+## Histogram Equalization:
 
 Dynamic Range Adjustment: Histogram equalization redistributes the intensity values across the entire range, improving the contrast and visibility of features in both light and dark regions.
 
 Noise Reduction: By stretching the histogram, it can reduce the impact of noise by enhancing the overall structure of the image.
 
-Benefits of the Combination
+## Benefits of the Combination
 
 Improved Visibility: The synergy of SSR, gamma correction, and histogram equalization can significantly enhance the visibility of details in both bright and dark areas, making the image more informative.
 
@@ -131,7 +131,7 @@ Enhanced Perceived SNR: The combination helps reduce the visibility of noise, pa
 
 Better Detail Recovery: Utilizing all three methods together can recover details that may be lost due to poor lighting or noise, leading to a more visually appealing result.
 
-Considerations:
+## Considerations:
 
 Sequential Application: The order of applying these techniques can impact the results. A common approach is to first apply SSR, then gamma correction, and finally histogram equalization.
 
