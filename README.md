@@ -37,7 +37,7 @@ So that it gives a better output.
 
 Lets see about the techniques and models used in this project:
 
-SSR (Single Scale Retinex):
+# SSR (Single Scale Retinex):
 Purpose: SSR aims to correct illumination and enhance color consistency in images, making them appear more natural and visually appealing.
 
 Mechanism:
@@ -91,7 +91,7 @@ Dynamic Range Utilization: Makes full use of the available intensity range, impr
 Applications: Commonly used in various fields such as medical imaging, satellite imagery, and photography, particularly in situations where the original image has low contrast.
 
 
-#Limitations:
+Limitations:
 
 Noise Amplification: Histogram equalization can sometimes amplify noise in uniform areas of the image.
 
