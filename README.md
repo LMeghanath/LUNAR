@@ -125,12 +125,12 @@ Combining Single Scale Retinex (SSR), gamma correction, and histogram equalizati
 ### Illumination Normalization: 
 SSR helps to separate illumination from reflectance, improving the visibility of details in the image by reducing the effects of uneven lighting.
 
-###Enhanced Contrast: 
+### Enhanced Contrast: 
 By enhancing the reflectance, SSR can make features more distinct against the background.
 
 ## Gamma Correction:
 
-###Brightness Adjustment: 
+### Brightness Adjustment: 
 Applying gamma correction with a value less than 1 brightens darker areas, making details more visible.
 
 ### Contrast Improvement: 
@@ -149,7 +149,7 @@ By stretching the histogram, it can reduce the impact of noise by enhancing the 
 ### Improved Visibility: 
 The synergy of SSR, gamma correction, and histogram equalization can significantly enhance the visibility of details in both bright and dark areas, making the image more informative.
 
-###Enhanced Perceived SNR: 
+### Enhanced Perceived SNR: 
 The combination helps reduce the visibility of noise, particularly in shadowed areas, improving the perceived SNR by making the signal more prominent against the noise.
 
 ### Better Detail Recovery: 
