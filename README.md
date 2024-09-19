@@ -61,7 +61,7 @@ SSR is commonly used in fields like medical imaging, remote sensing, and photogr
 
 ## Limitations:
 
-###Single Scale: 
+### Single Scale: 
 As the name implies, SSR uses a single scale for the filtering process, which may not effectively handle images with varying illumination levels across different scales.
 
 # Gamma Reduction:
