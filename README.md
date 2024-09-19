@@ -60,7 +60,7 @@ Limitations:
 
 Single Scale: As the name implies, SSR uses a single scale for the filtering process, which may not effectively handle images with varying illumination levels across different scales.
 
-Gamma Reduction:
+# Gamma Reduction:
 
 Gamma Reduction is a technique used in image processing to adjust the brightness of an image by altering its gamma value, which affects the luminance levels.
 
@@ -78,7 +78,7 @@ Over-Enhancement Risk: Over-applying gamma reduction can lead to loss of detail 
 
 Subjective Quality: The effectiveness can be subjective, as it depends on the specific image content and viewer perception.
     
-Histogram Equalization:
+# Histogram Equalization:
 
 Histogram Equalization is an image enhancement technique used to improve the contrast of an image. Here’s a brief overview:
 
@@ -99,7 +99,7 @@ Loss of Detail: In cases where the histogram is very peaky, the enhancement migh
 
 Color Images: Standard histogram equalization is typically applied to grayscale images; for color images, it can be more complex, requiring adjustments in each channel or converting to a different color space.
 
-Combination of SSR Gamma Reduction and Histogram Equalization:
+# Combination of SSR Gamma Reduction and Histogram Equalization:
 
 Combining Single Scale Retinex (SSR), gamma correction, and histogram equalization can lead to significant improvements in image quality and perceived Signal-to-Noise Ratio (SNR). Here’s how these techniques work together:
 
