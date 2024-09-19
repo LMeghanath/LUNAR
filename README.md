@@ -26,8 +26,9 @@ As we can see the improvement of the enhancing of shadowed regions.
 
 So we want to use combination CNN models for tranning a AI model.
 
- like RetinexNet model for SSR. 
+ like 
       
+      RetinexNet model for SSR. 
       UNet model for gamma correction.
       and applying histogram equalization.
       
@@ -90,7 +91,7 @@ Dynamic Range Utilization: Makes full use of the available intensity range, impr
 Applications: Commonly used in various fields such as medical imaging, satellite imagery, and photography, particularly in situations where the original image has low contrast.
 
 
-Limitations:
+#Limitations:
 
 Noise Amplification: Histogram equalization can sometimes amplify noise in uniform areas of the image.
 
