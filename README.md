@@ -1,4 +1,4 @@
-# LUNAR-VISION
+# LUNAR
 Enhancement of psr images.
 Intially the demo1.py is program for individual application of image processing techniques for the given image i,e, here it is psr.jpg.
 image processing general techniques like
