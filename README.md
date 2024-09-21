@@ -28,9 +28,8 @@ So we want to use combination CNN models for tranning a AI model.
 
  like 
       
-      RetinexNet model for SSR. 
-      Efficent-UNet model for gamma correction.
-      and applying histogram equalization.
+      LLNet. 
+      Efficent-UNet model.
       
 As the values of sigma in SSR and gamma in Gamma Reduction varies for different images.
 So that it gives a better output.
