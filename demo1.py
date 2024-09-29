@@ -81,5 +81,5 @@ def process_and_display_images(image_path):
     plt.show()
 
 # Run the combined image processing and display
-image_path = r"C:\Users\NNR DREANSCAPE\OneDrive\Desktop\meghanath\SIH\data\psr.jpg"
+image_path = r"psr.jpg"
 process_and_display_images(image_path)
