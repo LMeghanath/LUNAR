@@ -1,5 +1,9 @@
 # LUNAR
 Enhancement of psr images.
+
+We don't have the sufficent data ,i.e, image dataset to train the model at present.So we did the remaing processing of it.
+In future we will make a data set for normal low light images and apply it to LLNet, if the data of PSR regions is confidential.
+
 Intially the demo1.py is program for individual application of image processing techniques for the given image i,e, here it is psr.jpg.
 image processing general techniques like
      
@@ -24,12 +28,4 @@ The output(ssrtogrtohe).jpg file is the Output of the ssrtogrtohe.py
 
 As we can see the improvement of the enhancing of shadowed regions.
 
-So we want to use combination CNN models for tranning a AI model.
 
- like 
-      
-      LLNet. 
-      Efficent-UNet model.
-      
-As the values of sigma in SSR and gamma in Gamma Reduction varies for different images.
-So that it gives a better output.
