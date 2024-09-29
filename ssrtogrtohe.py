@@ -84,7 +84,7 @@ def process_image(image_path, sigma, gamma):
     print("Image processing complete. Saved as 'enhanced1_image.jpg'.")
 
 # Parameters
-image_path = r"C:\Users\NNR DREANSCAPE\OneDrive\Desktop\meghanath\SIH\data\psr.jpg"
+image_path = r"psr.jpg"
 sigma = 30.0  # Standard deviation for Gaussian filter in SSR
 gamma = 1.2   # Gamma value for correction
 
